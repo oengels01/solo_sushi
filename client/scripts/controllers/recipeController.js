@@ -35,10 +35,24 @@ $scope.postRecipeID = function(recipe) {
     //the sushi information is on the recipe argument
     //You need to store that id in a factory so the detail page
     //knows what sushi info to show.
-
     $location.url('/detail');
+      //add swich or if/else functions.
+    });
+  };
+  }]);
 
-    //add swich or if/else functions. 
-  });
-};
-}]);
+  // $scope.postRecipeID = function(recipe) {
+  //   swal({
+  //     title: "Are you sure you want to update recipe?",
+  //    //  type: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#592941",
+  //     confirmButtonText: "Edit It!",
+  //     closeOnConfirm: false
+  //   },
+  //   function(){
+  //     swal("Updated!", "Your recipe has been updated.", "success");
+  //     UserService.postRecipeID(recipe);
+// });
+// };
+// }]);

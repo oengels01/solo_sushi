@@ -48,6 +48,19 @@ router.delete("/delete/:id", function(req,res){
     res.send(allRecipes);
   });
 });
+
+// router.put("/favorite/:id", function(req,res){
+//   console.log("request: " + req.params.id);
+//   var id = req.params.id;
+//   Recipes.remove({_id: id}, function(err, allRecipes){
+//     if(err){
+//       console.log(err);
+//       res.sendStatus(500);
+//     }
+//     res.send(allRecipes);
+//   });
+// });
+
 router.put("/edit", function(req,res){
   console.log("request: ", req.body);
   var recipeID = req.body._id;

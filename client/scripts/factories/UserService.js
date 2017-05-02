@@ -9,7 +9,7 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
     userObject : userObject,
     recipeID : recipeID,
     // myFavorite : myFavorite,
-  
+
 
     getuser : function(){
       $http.get('/user').then(function(response) {
@@ -56,11 +56,13 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
       });
     },
 
-    // addToFavorites : function(recipe){
-    //   $http.post('/recipe/add', recipe).then(function(response) {
+    // addToFavorites : function(id){
+    //   $http.put('/recipe/add', recipe).then(function(response) {
     //     console.log('RecipeID Data: ', recipe);
     //       //  $location.path("/favorite");
     // });
+    //getFavorites : function()
+    //http.get('/favorite')
 
     logout : function() {
         $http.get('/user/logout').then(function(response) {
